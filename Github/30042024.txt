@@ -12,6 +12,7 @@ GitHub
 -->go to Action -> check "pages build and deployment"
 --> URL will be created
 --> back to "Code" -> right side "About" > Settings
+-->write a description in short (ex: HTML CSS _ Flex Layout)
 --> paste the URL to "Website" -> Save
 
 Github (after editted)
