@@ -30,3 +30,6 @@ HTML (Root Element) > Head (Parent: first child element) >Title (Child)
 //keyDown : events provide a code indicating which key is pressed
 //keyUp : events provide a code indicating which key is pressed
 //keyPress :indicates which character was entered.
+
+//mouseup: event is fired at an Element when a button on a pointing device (such as a mouse or trackpad) is released while the pointer is located inside it.
+//mousedown:  event is fired at an Element when a pointing device button is pressed while the pointer is inside the element.
