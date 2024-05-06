@@ -5,36 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<p>MouseUp</p>
-<input type="text" name="" id="" onmouseup="test1(event)">
+<p onmouseup="testOnMouseUp(event)">onmouseup	    A mouse button is released over an element</p>
+<p onmouseup="testOnMouseDown(event)">MouseDown</p>
+<p onmouseenter="testOnMouseEnter(event)">MouseEnter</p>
+<p onmouseleave="testOnMouseLeave(event)">MouseLeave</p>
+<p onmousemove="testOnMouseMove(event)">MouseMove</p>
+<p onmouseout="testOnMouseOut(event)">MouseOut</p>
+<p onmouseover="testOnMouseOver(event)">MouseOver</p>
+<span onmouseover="test1OnMouseOver(event)" id="test1">MouseOverPractice</span>
 
-<p>MouseDown</p>
-<input type="text"name="" id="" onmousedown="test2(event)">
+<h1 onclick="question2(event)">
+    Hello World.Hello World.Hello World.Hello World.Hello World.
+</h1>
+<span id="Testquestion2"></span>
 
-<p>OnFocus</p>
-<input type="text" name="" id="" onfocus="test3(event)">
+<p>Question3</p>
 
 <body>
     <script>
         //MouseEvents
         //Mouseup
         //MouseDown
-    function test1(event){
-            console.log(event)
-        } 
-
-    function test2(event){
-        console.log(event)
-    }
-        //InputEvent
-        //onfocus
-
-    function test3(event){
-        console.log(event)
+    function testOnMouseUp(event){
+    console.log("OnMouseup Function")
+    console.log(event)//Mouse Event  
     }
 
+    function testOnMouseDown(event){
+        console.log(event)
+        console.log("OnMouseDown Function")
+    } 
 
+    function testOnMouseEnter(event){
+        console.log(event)
+        console.log("OnMouseEnter Function")//when you put the cursor, it works
+    }
+
+    function testOnMouseLeave(event){
+        console.log(event)
+        console.log("OnMouseLeave Function")//when you leave the mouse from the text, it works
+    }
+
+    function testOnMouseMove(){
+        console.log(event)
+        console.log("testOnMouseMove Function")//as long as the cursor is on the text. it works for the entire time
+    }
+
+    function testOnMouseOut(){
+        console.log(event)
+        console.log("testOnMouseOut Function")//when you move the cursor away, it works
+    }
+
+    function testOnMouseOver(){
+        console.log(event)
+        console.log("testOnMouseOver Function")// when you mouse over, it works 1 time
+    }
+
+    //mouseover
+    function test1OnMouseOver(event){
+        console.log(event)
+        console.log("test2")
+        let test1=document.getElementById("test1")
+        test1.style.backgroundColor="green"
+    }
+
+    //Display the mouse X and Y coordinates in a <span> tag when you click on a <h1> tag which contains a paragraph.
+
+    function question2(event){
+        console.log(event)
+        let spantag=document.getElementById("Testquestion2")
+        spantag.innerHTML=`clientX cordinate is ${event.clientX} & clientY cordinate is ${event.clientY}`
+      }
+
+    //When user press any key in your html page show a alert that Invalid Key Pressed, but when user press spacebar show an alert Thank You..!! and close the current window.
     
+    //anonymous function
+  document.onkeypress=function(event){
+    // console.log(event)
+    if(event.code=="Space"){
+        console.log(`Thank You..!!`)
+        window.close()//method to close the tab
+    }
+    else{
+        console.log("Invalid Key Pressed")
+    }
+    }
+
+   
     </script>
 </body>
 </html>
