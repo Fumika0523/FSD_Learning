@@ -69,18 +69,16 @@
             }
              }
 
-        function test7(event)
+        function test7(event){
+            if(event.code="Space"){
+                console.log(`Thank you for visiting, ${event.code}`)
+            }
+            else{
+                console.log(`Pressed Wrong Button, ${event.code}`)
+            }
+        }
 
-        //refer
-        //MouseEvents
-        //Mouseup
-        //mouseDown
-        
-        //InputEvent
-        //onfocus
-
-        //KeyboardEvent
-        //keyup
+      
     </script>
     
 </body>
