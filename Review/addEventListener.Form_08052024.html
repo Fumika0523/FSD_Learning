@@ -7,14 +7,25 @@
 </head>
 <body>
     <form id="myForm">
-        <input type="text" name="username" value="" placeholder="Username">
-        <input type="submit" value="Submit">
+        <!-- Username -->
+        <label for="username">Username</label>
+        <input type="text" name="username" value="">
+         <!--Password-->
+        <label for="username">Username</label>
+        <input type="text" name="username" value="">
+       
+        <!--Submit-->
+        <input type="login" value="Login">
+
     </form>
     <script>
     let myFormTest=document.getElementById("myForm")
+    event.defaultPrevented()
     myFormTest.addEventListener('submit',(event)=>{
-        event.preventDefault()
-        console.log("Form Submitted")
+        event.preventDefault();  //
+        const request = new XMLHttRequest();
+        request.open("post","login.php")
+        console.log("Form has been submitted")
     })
 
     </script>
