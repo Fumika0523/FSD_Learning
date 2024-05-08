@@ -16,15 +16,13 @@
        
         <!--Submit-->
         <input type="login" value="Login">
-
     </form>
+
     <script>
     let myFormTest=document.getElementById("myForm")
     event.defaultPrevented()
     myFormTest.addEventListener('submit',(event)=>{
         event.preventDefault();  //
-        const request = new XMLHttRequest();
-        request.open("post","login.php")
         console.log("Form has been submitted")
     })
 
