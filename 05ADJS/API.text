@@ -1,0 +1,21 @@
+API:Application Programming Interface
+Ex:Restaurant
+API Key:
+Server:Kichen
+Waiter:REQUEST the order to kichen(Server)
+Waiter:RESPONSE (bring the food) to the client from (Server)
+
+XMLHttpRequest:XHR) objects are used to interact with servers. You can retrieve data from a URL without having to do a full page refresh. This enables a Web page to update just part of a page without disrupting what the user is doing.
+
+Fetch API:provides and interface for fetching resources(including across the network) newer than xmlhttprequest and more powerful and flexible.
+
+The JSON.parse() static method parses a JSON string, constructing the JavaScript value or object described by the string. An optional reviver function can be provided to perform a transformation on the resulting object before it is returned.
+EXAMPLE>>>>
+const json = '{"result":true, "count":42}';
+const obj = JSON.parse(json);
+
+console.log(obj.count);
+// Expected output: 42
+
+console.log(obj.result);
+// Expected output: true
