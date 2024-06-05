@@ -21,11 +21,21 @@
 
         let c = Math.round(-2.5)
         document.getElementById("test3").innerHTML=`Math.round(-2.5) os ${c}`
-
-        
     </script>
-    array.shift()
 
-    //includes()
+    <h2>Array.shift() Method</h2>
+    <p>shift() removes the first item of an array:</p>
+    <p id="id1"></p>
+    <p id="id2"></p>
+    <p id="id3"></p>
+    
+    <script>
+    const fruits = ["Banana", "Orange", "Apple", "Pinapple"]
+    document.getElementById("id1").innerHTML=`This is before shift() Method ${fruits}`,
+    fruits.shift();
+    document.getElementById("id2").innerHTML=`This is the output of shift() Method ${fruits}`
+    </script>
+
+
 </body>
 </html>
