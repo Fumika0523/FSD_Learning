@@ -9,9 +9,20 @@
     <h2>Math.round() Method</h2>
     <p>Math.round() rounds a number to the nearest integer:</p>
     <p id="test1"></p>
+    <p id="test2"></p>
+    <p id="test3"></p>
 
     <script>
-        document.getElementById("test1").innerHTML=Math.round(2.5)
+        let a = Math.round(2.5)
+        document.getElementById("test1").innerHTML=`Math.round(2.5) is ${a}`
+
+        let b= Math.round(2.49)
+        document.getElementById("test2").innerHTML=`Math.round(2.49) is ${b}`
+
+        let c = Math.round(-2.5)
+        document.getElementById("test3").innerHTML=`Math.round(-2.5) os ${c}`
+
+        
     </script>
     array.shift()
 
