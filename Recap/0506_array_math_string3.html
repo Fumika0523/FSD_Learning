@@ -22,6 +22,7 @@
         let c = Math.round(-2.5)
         document.getElementById("test3").innerHTML=`Math.round(-2.5) os ${c}`
     </script>
+    <hr>
 
     <h2>Array.shift() Method</h2>
     <p>shift() removes the first item of an array:</p>
@@ -31,11 +32,21 @@
     
     <script>
     const fruits = ["Banana", "Orange", "Apple", "Pinapple"]
-    document.getElementById("id1").innerHTML=`This is before shift() Method ${fruits}`,
+    document.getElementById("id1").innerHTML=`This is before shift() Method: ${fruits}`,
     fruits.shift();
-    document.getElementById("id2").innerHTML=`This is the output of shift() Method ${fruits}`
+    document.getElementById("id2").innerHTML=`This is the output of shift() Method: ${fruits}`
     </script>
+    <hr>
+    <h2>includes() Method</h2>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
 
+    <script>
+        const fruits1=["Banana","Orange","Coconut","Watermelon"]
+        document.getElementById("demo1").innerHTML=`This is before includes() Method: ${fruits1}`
+        fruits1.includes("Orange");
+        document.getElementById("demo2").innerHTML=`fruits1.includes("Mango") // ${fruits1}, output is true or faluse > Boolean`
+    </script>
 
 </body>
 </html>
