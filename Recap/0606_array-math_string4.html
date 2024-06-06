@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Math.trunc() Method</h2>
+    <p>Return the integer part of a number:</p>
+    <p id="test1"></p>
+    <p id="test2"></p>
+    <script>
+        let x = Math.trunc(8.76)//8
+        document.getElementById("test1").innerHTML=`Math.trunc(8.76) // ${x}`
+        
+        let y=Math.trunc(-8.76)//-8
+        document.getElementById("test2").innerHTML=`Math.trunc(-8.76) // ${y}`
+    </script>
+    <hr>
+    <h2>array.unshift() Method</h2>
+    <p>unshifft() adds new items to the beginning of an array:</p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        const fruits = ["Banana","Orange","Apple"]
+        document.getElementById("demo1").innerHTML=`const fruits = ${fruits}`
+        let a = fruits.unshift("Lemon","Pineapple");
+        document.getElementById("demo2").innerHTML=`After fruits.unshift("Lemon","Pineapple") is ${fruits}`
+    </script>
+    <hr>
+    <h2>trim() Method</h2>
+    <p>trim() removes the space from both side of a string:</p>
+    <p id="design1"></p>
+    <p id="design2"></p>
+    <script>
+        let text = "     Hello World!     ";
+        let result = text.trim();
+        
+        document.getElementById("demo1").innerHTML = text;
+        document.getElementById("demo2").innerHTML = result;
+    </script>
+</body>
+</html>
