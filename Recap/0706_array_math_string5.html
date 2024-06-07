@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Math.pow()</h2>
+    <p>remove the space from ending of the string--return string > (5,2) => 5 times 5: (number,times)</p>
+    <p id="demo"></p>
+    <script>
+        let x=Math.pow(4,3)
+        document.getElementById("demo").innerHTML=`Math.pow(4,3)//4*4*4 > ${x}`
+    </script>   
+    <!--  -->
+    <hr>
+    <h2>array.fill()</h2>
+    <p>fill value with respect to the index number position --index start position </p>
+    <p>Fill the last two array elements with "Kiwi":</p>
+
+    <p id="demo2"></p>
+    <script>
+        const fruits=["Banna","Orange","Mango","Apple"]
+        let y=fruits.fill("Kiwi")
+        document.getElementById("demo2").innerHTML=`const fruits=["Banna","Orange","Mango","Apple"], fruits.fill("Kiwi")// ${y}`
+        const fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo").innerHTML = fruits2.fill("Kiwi",2,4);
+    </script>
+    <hr>
+    <!--  -->
+    <h2>trimEnd()</h2>
+    <p>remove the space from ending of the string--return string</p>
+    <p id="demo3"></p>
+
+    <script>
+    let text1 = "     Hello World!     ";
+    let text2 = text1.trimEnd();
+    
+    document.getElementById("demo3").innerHTML =
+    "Length text1 = " + text1.length + "<br>Length text2 = " + text2.length;
+    </script>
+</body>
+</html>
