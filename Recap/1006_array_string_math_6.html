@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h2>Math.sqrt() Method</h2> 
+   <p>Math.sqrt() returns the square of root of a number:</p>
+   <p id="demo1"></p>
+   <script>
+    let x = Math.sqrt(9)
+document.getElementById("demo1").innerHTML=`Math.sqrt(9) is ${x}`
+   </script>
+   <hr>
+   <h2>array.includes() Method</h2>
+   <p>includes() returns true if a string contains a specified string.</p>
+   <p>Find "world":</p>
+   <p id="demo2"></p>
+   <script>
+    let text = "Hello world, welcome to the universe."
+    let y = text.includes("world")
+    let result = text.includes("world");
+     document.getElementById("demo2").innerHTML=`let text= Hello world, welcome to the universe. text.includes("world")//${y}`
+   </script>
+   <hr>
+   <h2>trimStart() Method</h2>
+   <p> trimStart() method removes whitespace from the beginning of a string.</p>
+   <p id="demo3"></p>
+
+   <script>
+   let text1 = "     Hello World!     ";
+   let text2 = text1.trimStart();
+   
+   document.getElementById("demo3").innerHTML =
+   "Length text1 = " + text1.length + "<br>Length text1.2 = " + text2.length;
+   </script>
+   
+</body>
+</html>
